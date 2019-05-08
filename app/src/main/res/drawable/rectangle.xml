@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Zala Ravi Tulsi  B00805073 -->
+
+<!-- Rectangle shape is used for stylizing the button
+     By stylizing the corners I have created the shape of Rounded Rectangle
+     Stroke surrounds the line of the shape
+-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle" android:padding="15dp">
+<solid android:color="#FFFFFF"/>
+
+<corners
+    android:bottomRightRadius="10dp"
+    android:bottomLeftRadius="10dp"
+    android:topLeftRadius="10dp"
+    android:topRightRadius="10dp"/>
+
+<stroke android:width="1dip" android:color="#ffff72" />
+
+</shape>

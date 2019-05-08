@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Zala Ravi Tulsi  B00805073 -->
+
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/lv_weather"
+    android:alpha="0.9"
+
+    android:background="@drawable/sunny_weather">
+
+    <!-- This TextView is used for suggestion of city names for facilitating user to automatic suggestion -->
+    <AutoCompleteTextView
+
+        android:id="@+id/et_city"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rectangle"
+        android:layout_gravity="center"
+        android:hint="Enter City Name"
+        android:padding="2dp"
+        android:singleLine="true"/>
+
+    <!-- This button is used for fetching weather for cityvalue in et_city textview -->
+    <!-- Used weathe icon image from drawable to drawableLeft for button Icon -->
+
+    <Button
+        android:id="@+id/bt_weather"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Get Weather"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/sunny"
+        android:padding="13dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Horizontal linear layout for min and max values -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+        <TextView
+
+            android:id="@+id/tv_minvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+
+            android:id="@+id/tv_maxvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:layout_marginLeft="95dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <!-- Setting the divider view in LinearLayout for good user experience -->
+
+    <View android:layout_height="2dp"
+        android:layout_width="wrap_content"
+        android:background="#000000"
+        android:visibility="invisible"
+        android:id="@+id/div"
+        android:layout_marginTop="15dp"/>
+
+
+    <!-- Vertical linear layout for atmosphere and atmosphere description -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+
+            android:id="@+id/tv_atmosphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+        <TextView
+
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <!-- Divider view  -->
+
+
+    <View android:layout_height="2dp"
+        android:layout_width="wrap_content"
+        android:background="#000000"
+        android:visibility="invisible"
+        android:id="@+id/div1"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Horizontal linear layout for two layouts containing humidity and clouds values -->
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+
+                android:id="@+id/tv_hum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_clouds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_clouds_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

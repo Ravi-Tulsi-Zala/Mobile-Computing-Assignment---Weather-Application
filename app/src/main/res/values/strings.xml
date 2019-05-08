@@ -1,0 +1,66 @@
+<!-- Zala Ravi Tulsi   B00805073 -->
+
+<!-- City names array for autocomplete suggestion for city Textview -->
+<resources>
+    <string name="app_name">Weather</string>
+    <string-array name="name_cities">
+    <item>Halifax</item>
+    <item>London</item>
+    <item>Vancouver</item>
+    <item>Toronto</item>
+    <item>Ottawa</item>
+    <item>Calgary</item>
+    <item>Montreal</item>
+    <item>Edmonton</item>
+    <item>Quebec</item>
+    <item>Winnipeg</item>
+    <item>Victoria</item>
+    <item>Hamilton</item>
+    <item>Regina</item>
+    <item>Guelph</item>
+    <item>Kingston</item>
+    <item>Windsor</item>
+    <item>Waterloo</item>
+    <item>Brampton</item>
+    <item>Fredericton</item>
+    <item>New York</item>
+    <item>San Francisco</item>
+    <item>Seattle</item>
+    <item>Austin</item>
+    <item>Chicago</item>
+    <item>Boston</item>
+    <item>Dallas</item>
+    <item>Atlanta</item>
+    <item>Portland</item>
+    <item>Miami</item>
+    <item>San Jose</item>
+    <item>Las Vegas</item>
+    <item>Tokyo</item>
+    <item>Melbourne</item>
+    <item>Berlin</item>
+    <item>Paris</item>
+    <item>Zurich</item>
+    <item>Sydney</item>
+    <item>Seoul</item>
+    <item>Dubai</item>
+    <item>Singapore</item>
+    <item>Moscow</item>
+    <item>Barcelona</item>
+    <item>Madrid</item>
+    <item>Rome</item>
+    <item>Washington</item>
+    <item>Prague</item>
+    <item>Shanghai</item>
+    <item>Warshaw</item>
+    <item>Mumbai</item>
+    <item>Delhi</item>
+    <item>Venice</item>
+    <item>Manchester</item>
+    <item>Basel</item>
+
+
+    </string-array>
+
+
+
+</resources>
